@@ -15,7 +15,8 @@ FreeBSD-13.2-RELEASE-amd64-disc1.iso - https://download.freebsd.org/releases/arm
 
 
 
-**VirtualBox Installation:**
+## VirtualBox Installation:
+
 In VirtualBox, click the New button to start the wizard that will walk you through creating a virtual machine. The important options to keep in mind are the following:
 
 Type of OS we'll choose FreeBSD 64 bit,
@@ -30,7 +31,8 @@ Select Install by pressing Enter/Return on the keyboard. At this point, you will
 
 
 
-**VMWare Fusion Installation:**
+## VMWare Fusion Installation:
+
 In VMWare Fusion, click the ‘+’ symbol in the top left corner, then click New to create a new virtual machine.
 Choose Create a custom virtual machine and click Continue to proceed.Select Other as the Operating System and FreeBSD 13 64-bit Arm as the Version when prompted:
 Select “create a new virtual disk” and click continue.
@@ -44,7 +46,8 @@ Right click “virtual machine” in the top bar menu, and select “restart”.
 
 
 
-**User Accounts:**
+## User Accounts:
+
 Continue through the installer, hit enter to start installation:
 
 Continue with the default US keyboard layout, name the computer freebsd-workshop and select the default settings on the Distribution. 
@@ -71,6 +74,7 @@ Say “yes” to the prompt about adding a new user. Use an all lowercase userna
 
 For the Final Configuration section, select Handbook. The default of en and choose ok. Once back on the configuration screen, select Exit to finish and yes to proceed with doing manual configuration. The only manual configuration we need to do is to shut down the machine so we can take out the CD. On the virtual machine, the power needs to be off to not get an error when removing the CD, so we’ll issue the shutdown command below to turn off the computer. Type either init 0 or shutdown -p now to shut down. 
 
+### Remove Boot Disk
 
 To take a CD out of a virtual machine in VirtualBox, click on the name of the virtual machine, click on Settings, click on Storage, and click on the tiny CD icon. Notice another tiny CD icon with a tiny down arrow below it next to the Optical Drive section. Use this second CD icon to Remove Disk from Virtual Drive. Click Ok.
 
@@ -80,7 +84,7 @@ For VMWare Fusion, hold down command-E. Click on CD/DVD, and then Un-check the b
 
 
 
-Break
+# Break
 
 
 
@@ -89,10 +93,11 @@ Break
 Boot up the first VM, use the Start button to boot the machine and log in as the root user.
 
 
-Package Installation / Text Configuration
+## Package Installation / Text Configuration
+
 Type the following commands on the virtual machine:
 
-pkg
+<html>pkg</html>
 
 respond to the prompt with y to bootstrap pkg if you didn't install the handbook earlier. We're installing 6 packages in one line. 
 
