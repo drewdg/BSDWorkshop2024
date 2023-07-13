@@ -108,7 +108,7 @@ respond to the prompt with y to bootstrap pkg if you didn't install the handbook
 
 > pkg install -y xorg sudo xfce firefox vim-x11 virtualbox-ose-additions
 
-**/* remove “virtualbox-ose-additions if using VMWare Fusion, and skip the following 2 commands * **
+#### remove “virtualbox-ose-additions if using VMWare Fusion, and skip the following 2 commands
 
 > sysrc vboxguest_enable=YES
 
