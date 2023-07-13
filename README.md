@@ -49,7 +49,7 @@ Choose Create a custom virtual machine and click Continue to proceed. Select Oth
 * Right click “virtual machine” in the top bar menu, and select “restart”.
 
 
-
+Contact: drew@freebsdfoundation.org
 
 ## User Accounts:
 
