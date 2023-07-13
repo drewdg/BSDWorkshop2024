@@ -97,12 +97,12 @@ Boot up the first VM, use the Start button to boot the machine and log in as the
 
 Type the following commands on the virtual machine:
 
-<html>pkg</html>
+pkg
 
 respond to the prompt with y to bootstrap pkg if you didn't install the handbook earlier. We're installing 6 packages in one line. 
 
 pkg install -y xorg sudo xfce firefox vim-x11 virtualbox-ose-additions
-* remove “virtualbox-ose-additions if using VMWare Fusion, and skip the following 2 commands * 
+/* remove “virtualbox-ose-additions if using VMWare Fusion, and skip the following 2 commands * 
 sysrc vboxguest_enable=YES
 sysrc vboxservice_enable=YES
 
