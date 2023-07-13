@@ -75,9 +75,19 @@ Choose Create a custom virtual machine and click Continue to proceed. Select Oth
 
 * Go with the default settings under System Hardening and leave all options blank.
 
-* Say “yes” to the prompt about adding a new user. Use an all lowercase username. Enter the users Full name. Add the user account to the groups wheel, operator, video by responding to the question Login group is .. Invite .. into other groups? []: with wheel operator video then press Enter. Users in the wheel group can run “privileged” commands. The operator group allows users to do things like shutdown and restart the computer without needing to invoke the special privileges from the wheel group. It's a good idea to add users to the video group that is planning on using FreeBSD as a desktop. We chose tcsh for our shell and used defaults for the other fields while finally providing an account password. If all looks ok, proceed without creating any more user accounts.
+* Say “yes” to the prompt about adding a new user. Use an all lowercase username. Enter the users Full name. 
 
-* For the Final Configuration section, select Handbook. The default of en and choose ok. Once back on the configuration screen, select Exit to finish and yes to proceed with doing manual configuration. The only manual configuration we need to do is to shut down the machine so we can take out the CD. On the virtual machine, the power needs to be off to not get an error when removing the CD, so we’ll issue the shutdown command below to turn off the computer. Type either init 0 or shutdown -p now to shut down. 
+* Add the user account to the groups wheel, operator, video by responding to the question Invite .. into other groups? []: with wheel operator video then press Enter. Users in the wheel group can run “privileged” commands. The operator group allows users to do things like shutdown and restart the computer without needing to invoke the special privileges from the wheel group. It's a good idea to add users to the video group that is planning on using FreeBSD as a desktop. 
+
+* We chose tcsh for our shell and used defaults for the other fields while finally providing an account password. If all looks ok, proceed without creating any more user accounts.
+
+* For the Final Configuration section, select Handbook. The default of en and choose ok. 
+
+* Once back on the configuration screen, select Exit to finish and yes to proceed with doing manual configuration. The only manual configuration we need to do is to shut down the machine so we can take out the CD. On the virtual machine, the power needs to be off to not get an error when removing the CD, so we’ll issue the shutdown command below to turn off the computer. Type:
+
+> shutdown -p now
+
+
 
 ### Remove Boot Disk
 
