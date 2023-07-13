@@ -1,5 +1,6 @@
 # BSDWorkshop2023
 
+Contact: drew@freebsdfoundation.org
 
 ## Pre-Installation:
 
