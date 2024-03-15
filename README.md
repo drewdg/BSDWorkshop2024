@@ -1,4 +1,4 @@
-# BSDWorkshop2023
+# BSDWorkshop2024
 
 Contact: drew@freebsdfoundation.org
 
