@@ -110,7 +110,7 @@ Type the following commands on the virtual machine:
 
 respond to the prompt with y to bootstrap pkg if you didn't install the handbook earlier. We're installing 6 packages in one line. 
 
-> pkg install -y xorg sudo xfce firefox vim-x11 virtualbox-ose-additions
+> pkg install -y xorg sudo xfce firefox vim-x11 open-vm-tools virtualbox-ose-additions
 
 # Break While Installing
 
