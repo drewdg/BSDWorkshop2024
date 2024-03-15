@@ -6,12 +6,11 @@ Contact: drew@freebsdfoundation.org
 
 Come to the Workshop with the following pre-downloaded:
 
-For Apple m1/m2:
 VMWare Fusion Pro - https://www.vmware.com/products/fusion/fusion-evaluation.html
 
 FreeBSD-14.0-RELEASE-aarch64-disc1.iso - [https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-arm64-aarch64-disc1.iso](https://download.freebsd.org/releases/arm64/aarch64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-arm64-aarch64-disc1.iso)
 
-For All other Hardware:
+
 VirtualBox - https://www.virtualbox.org/wiki/Downloads
 
 FreeBSD-14.0-RELEASE-amd64-disc1.iso - [https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-amd64-disc1.iso](https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-amd64-disc1.iso)
