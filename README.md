@@ -37,7 +37,7 @@ FreeBSD-14.0-RELEASE-amd64-disc1.iso - [https://download.freebsd.org/releases/am
 ## VMWare Fusion Installation:
 
 * In VMWare Fusion, click the ‘+’ symbol in the top left corner, then click New to create a new virtual machine.
-Choose Create a custom virtual machine and click Continue to proceed. Select Other as the Operating System and FreeBSD 13 64-bit Arm as the Version when prompted:
+Choose Create a custom virtual machine and click Continue to proceed. Select Other as the Operating System and FreeBSD 14 64-bit Arm as the Version when prompted:
 
 * Select “create a new virtual disk” and click continue.
 
@@ -47,7 +47,7 @@ Choose Create a custom virtual machine and click Continue to proceed. Select Oth
 
 * Press command+E to open virtual machine settings and click CD/DVD.
 
-* Choose FreeBSD ISO image, this is the FreeBSD-13.2-RELEASE-aarch64-disc1.iso image that we downloaded earlier. THEN Check the box to connect a CD/DVD drive.
+* Choose FreeBSD ISO image, this is the FreeBSD-14.0-RELEASE-aarch64-disc1.iso image that we downloaded earlier. THEN Check the box to connect a CD/DVD drive.
 
 * Right click “virtual machine” in the top bar menu, and select “restart”.
 
@@ -60,8 +60,6 @@ Contact: drew@freebsdfoundation.org
 
 * Continue with the default US keyboard layout, name the computer freebsd-workshop and select the default settings on the Distribution. 
 
-* Select screen (if there is one, it depends on the version of .iso you downloaded) by just pressing ok 
-
 * Next, we need to decide how to partition the disc. On the Partitioning screen, there are options for Auto (ZFS) and Auto (UFS). Select Auto (ZFS), choose stripe as the ZFS pool type and select the disc to use for the pool with the space-bar, name the pool, and proceed with installation. 
 
 * Set a password for the root account on the system. Don’t fret when there are no *** appearing while typing in your root password. Rest assured, the keystrokes are being recorded; they’re just not being shown on the Screen.
@@ -72,7 +70,7 @@ Contact: drew@freebsdfoundation.org
 
 * The resolver configuration should be populated with at least one DNS value.Use the “Tab” key on the keyboard to move to select ok to continue. 
 
-* For the Time Zone section go with America – North and South, United States of America, Pacific, Skip on both Time & Date screens. 
+* For the Time Zone section, make sure to select no to auto UTC configuration, then go with America – North and South, United States of America, Pacific, Skip on both Time & Date screens. 
 
 * For the System Configuration section, select sshd, select powerd and choose ok. 
 
@@ -102,12 +100,6 @@ For VMWare Fusion, hold down command-E. Click on CD/DVD, and then Un-check the b
 
 
 
-# Break
-
-
-
-
-
 Boot up the first VM, use the Start button to boot the machine and log in as the root user.
 
 
@@ -120,6 +112,8 @@ Type the following commands on the virtual machine:
 respond to the prompt with y to bootstrap pkg if you didn't install the handbook earlier. We're installing 6 packages in one line. 
 
 > pkg install -y xorg sudo xfce firefox vim-x11 virtualbox-ose-additions
+
+# Break While Installing
 
 #### remove “virtualbox-ose-additions if using VMWare Fusion, and skip the following 2 commands
 
