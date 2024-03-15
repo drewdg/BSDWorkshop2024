@@ -186,6 +186,8 @@ Click OK and start your machine again.
 
 > freebsd-update fetch install
 
+If running into an issue, press 'q' to return to the command line
+
 Now that FreeBSD itself is up to date, we should also update the packages.
 
 > pkg update
